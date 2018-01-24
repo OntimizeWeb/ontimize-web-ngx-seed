@@ -5,14 +5,11 @@ import {
   ONTIMIZE_MODULES,
   ONTIMIZE_PROVIDERS,
   OntimizeWebModule
-} from 'ontimize-web-ng2';
+} from 'ontimize-web-ngx';
 
 import { CONFIG } from './app.config';
 import { AppComponent } from './app.component';
-
 import { AppRoutingModule } from './app-routing.module';
-import { MainModule } from './main/main.module';
-import { LoginModule } from './login/login.module';
 
 // Standard providers...
 // Defining custom providers (if needed)...
@@ -22,8 +19,7 @@ export const customProviders: any = [
 @NgModule({
   imports: [
     ONTIMIZE_MODULES,
-    MainModule,
-    LoginModule,
+    OntimizeWebModule,
     AppRoutingModule
   ],
   declarations: [
