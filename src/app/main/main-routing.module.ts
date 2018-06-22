@@ -9,7 +9,6 @@ export function loadHomeModule() {
   return HomeModule;
 }
 
-
 export const routes: Routes = [{
   path: '',
   component: MainComponent,
@@ -21,8 +20,7 @@ export const routes: Routes = [{
       loadChildren: loadHomeModule
     }
   ]
-}
-];
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
