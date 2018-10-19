@@ -1,7 +1,7 @@
 import { Component, Inject, Injector, NgZone, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { APP_CONFIG, Config, LoginService, NavigationService } from 'ontimize-web-ngx';
 
