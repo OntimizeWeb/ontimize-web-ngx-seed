@@ -10,7 +10,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-         "build": {
+        "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/ontimize-web-ngx-seed",
@@ -25,6 +25,11 @@
               {
                 "glob": "**/*",
                 "input": "node_modules/ontimize-web-ngx/assets",
+                "output": "/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets",
                 "output": "/assets"
               },
               "src/manifest.webmanifest"
@@ -134,6 +139,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ontimize-web-ngx-seed"
 }
